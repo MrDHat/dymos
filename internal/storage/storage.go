@@ -63,6 +63,7 @@ func NewStorage(dir string, opts StorageOptions) Storage {
 	s.dataFiles[currentFile.Name()] = currentFile
 
 	// TODO: read all data files in read only mode
+	// This will also need keydir rebuild
 
 	return s
 }
